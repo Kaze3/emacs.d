@@ -96,7 +96,10 @@
 (setq-default show-trailing-whitespace t)
 
 ;; remove useless whitespace before saving
+;; remove empty from default whitespace-style
 (add-hook 'before-save-hook 'whitespace-cleanup)
+(setq whitespace-style (quote
+   (face tabs spaces trailing lines space-before-tab newline indentation space-after-tab space-mark tab-mark newline-mark)))
 
 ;; don't show startup message
 (setq inhibit-splash-screen t)
