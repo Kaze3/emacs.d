@@ -22,6 +22,9 @@
   (global-set-key (kbd "\M-x") 'counsel-M-x)
 )
 
+(when (>= emacs-major-version 26)
+  (global-display-line-numbers-mode))
+
 (setq custom-file "~/.emacs.d/custom.el")
 (if (file-exists-p custom-file)
     (load custom-file))
