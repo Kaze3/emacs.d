@@ -101,3 +101,5 @@
 ;; don't show startup message
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
+
+(setq visible-bell 1)
