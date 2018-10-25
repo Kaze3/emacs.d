@@ -45,6 +45,9 @@
 (global-set-key [f8] 'neotree-toggle)
 (setq neo-smart-open t)
 
+;; nginx-mode
+(require 'nginx-mode)
+
 ;; indent with spaces and set indentation levels
 (setq-default indent-tabs-mode nil)
 (setq tab-width 2
