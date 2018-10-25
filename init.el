@@ -103,3 +103,6 @@
 (setq inhibit-startup-message t)
 
 (setq visible-bell 1)
+
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
