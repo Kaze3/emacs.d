@@ -29,13 +29,6 @@
 (if (file-exists-p custom-file)
     (load custom-file))
 
-;; (setq sml/theme 'powerline)
-;; (sml/setup)
-;; (set-face-attribute 'mode-line nil
-;;                     :foreground "Green"
-;;                     :background "DarkOrange"
-;;                     :box nil)
-
 (require 'powerline)
 (powerline-default-theme)
 
