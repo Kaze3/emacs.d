@@ -84,7 +84,7 @@
   (tool-bar-mode -1))
 
 ;; highlight current line
-;(global-hl-line-mode 1)
+(global-hl-line-mode 1)
 
 ;; highlight corresponding parentheses when cursor is on one
 (show-paren-mode 1)
