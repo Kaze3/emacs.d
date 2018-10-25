@@ -7,13 +7,8 @@
    t)
   (package-initialize)
 
-  ;; load solarized theme
-  ;; original: http://ethanschoonover.com/solarized
-  ;; emacs implementation: https://github.com/sellout/emacs-color-theme-solarized
-  ;; my fork: https://github.com/Kaze3/emacs-color-theme-solarized
-  ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
-  ;; (require 'color-theme-solarized)
-  (load-theme 'solarized t)
+  (setq monokai-background "#282C34")
+  (load-theme 'monokai t)
 
   ;; automatically add matching brackets
   (electric-pair-mode 1)
