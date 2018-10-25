@@ -71,8 +71,8 @@
   (setq web-mode-code-indent-offset 2))
 
 ;; store backup and auto-save files in user dir
-(setq autosave-dir "~/.emacs-backup/autosave/")
-(setq backup-dir "~/.emacs-backup/backup/")
+(setq autosave-dir "~/.emacs/autosave")
+(setq backup-dir "~/.emacs/backup")
 (unless (file-exists-p autosave-dir)
         (make-directory autosave-dir t))
 (unless (file-exists-p backup-dir)
