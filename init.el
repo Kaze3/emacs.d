@@ -7,7 +7,7 @@
    t)
   (package-initialize)
 
-  (setq monokai-background "#282C34")
+  (setq monokai-background "#272822")
   (load-theme 'monokai t)
 
   ;; automatically add matching brackets
