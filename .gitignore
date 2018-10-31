@@ -5,3 +5,4 @@ backup/
 auto-save-list/
 emacs-color-theme-solarized
 custom.el
+\.#*
