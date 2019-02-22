@@ -64,11 +64,6 @@
 ;; yasnippet: https://github.com/capitaomorte/yasnippet
 (yas-global-mode 1)
 
-;; neotree: https://github.com/jaypei/emacs-neotree
-(require 'neotree)
-(global-set-key [f8] 'neotree-toggle)
-(setq neo-smart-open t)
-
 ;; nginx-mode
 (require 'nginx-mode)
 
