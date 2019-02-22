@@ -1,11 +1,27 @@
 (when (>= emacs-major-version 24)
+  ;; list the packages you want
+  (setq package-list '(monokai-theme
+                       counsel
+                       powerline
+                       auto-complete
+                       yasnippet
+                       magit
+                       nginx-mode
+                       web-mode))
+
   ;; initialize package manager
   (require 'package)
-  (add-to-list
-   'package-archives
-   '("melpa" . "http://melpa.org/packages/")
-   t)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
   (package-initialize)
+
+  ;; fetch list of available packages
+  (unless package-archive-contents
+    (package-refresh-contents))
+
+  ;; install the missing packages
+  (dolist (package package-list)
+    (unless (package-installed-p package)
+      (package-install package)))
 
   (setq monokai-background "#272822")
   (load-theme 'monokai t)
