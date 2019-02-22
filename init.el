@@ -40,7 +40,11 @@
 
   (when (eq window-system 'w32)
     (setq tramp-default-method "plink"))
-)
+  )
+
+(when (>= emacs-major-version 25)
+  ;; magit
+  (global-set-key (kbd "C-x g") 'magit-status))
 
 (when (>= emacs-major-version 26)
   (global-display-line-numbers-mode))
@@ -126,7 +130,4 @@
 (setq inhibit-startup-message t)
 
 (setq visible-bell 1)
-
-;; magit
-(global-set-key (kbd "C-x g") 'magit-status)
 
